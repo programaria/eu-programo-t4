@@ -1,0 +1,53 @@
+/* GERAL */
+* {
+    box-sizing: border-box;
+    color:#34495e;
+} 
+
+body {
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+ul li, ol li {
+    margin: 5px;
+}
+
+/* UTILITIES */
+.u-margin-left-medium {
+    margin-left: 80px;
+}
+
+/* DESIGN THINKING SECTION */
+
+.header {
+    margin: 15px;
+    text-align: center;
+}
+
+.secao-receita h2 {
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+
+.secao-receita {
+    width: 75%;
+    margin: 50px auto;
+}
+
+    .secao-receita__img, .secao-receita__lista {
+        width: 45%;
+        display: inline-block;
+    }
+
+    .secao-receita__lista {
+        vertical-align: top;
+        line-height: 1.5;
+    }
