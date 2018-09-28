@@ -1,0 +1,54 @@
+/* GERAL */
+body {
+    margin: 0;
+    text-align: center;
+    font-family: 'Arvo', Arial, Helvetica, sans-serif;
+    background: url(https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/VD3_AF7De/beautiful-marine-background-underwater-scene-with-light-rays-hd-1080_ndjxu5-cl__F0011.png);
+
+    padding-top: 20px;
+    color: white;
+}
+
+/* TITULO */
+h1 {
+    text-transform: uppercase;
+}
+
+/* LINHA HORIZONTAL */
+hr {
+    width: 100px;
+    margin: 0 auto;
+    border: 1px solid white;
+}
+
+/* IMAGEM DA DORY */
+img {
+    width: 400px;
+}
+
+/*  LISTA */
+ul {
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+ul li {
+    list-style: none;
+    line-height: 2;
+}
+
+/* BOTAO */
+a {
+    text-decoration: none;
+    color: #333;
+    background-color: white;
+    padding: 10px;
+}
+
+/* COPYRIGHT */
+p {
+    margin: 0;
+    margin-top: 50px;
+    background-color: #0984e3;
+    padding: 20px;
+}
