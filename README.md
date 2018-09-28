@@ -30,6 +30,63 @@ Ou seja, uma pasta com um arquivo **index.html na raiz** e duas pastas:
 - Pasta *css* para inserção de nossos estilos .css 
 - Pasta *img* para inserção de nossas imagens.
 
+-----
+
 ### HTML
+HTML é uma abreviação de **Hyper Text Markup Language** (linguagem de marcação em hipertexto). Ou seja, não se trata de uma linguagem de programação, pois não tem lógica (algoritmos, processos etc). Ele cria a **estrutura** de uma página ou aplicação web, determinando a separação de layout e seu conteúdo.
+
+Documentos .html possuem tags de estruturação básica:
+```html
+<!doctype html>
+<html>
+    <head></head>
+    <body></body>
+</html>
+```
+
+Internamente, as tags html possuem uma anatomia básica também:
+```html
+<nome-da-tag atributo="valor do atributo">
+    conteúdo
+</nome-da-tag>
+```
+
+--------
+
+## Aula 2 - CSS
 ### CSS
-### Github
+CSS é abreviação de **Cascading Style Sheet** (folha de estilos em cascata). É a linguagem que define **estilos** para o HTML, portanto, não se trata de linguagem de programação. CSS tem "cascata" no nome, devido a sua forma de determinar a propriedade de um elemento - levando em consideração *hierarquia de seletores* e de chamadas de estilo (inline, internal e external).
+
+Para fazer o link de um arquivo .css em um documento .html, devemos inserir a tag <link> no <head> do documento, com o href do caminho do arquivo.
+```html
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body></body>
+</html>
+```
+
+Dentro do arquivo .css, a anatomia é:
+```css
+seletor {
+    propriedade: valor;
+}
+```
+
+Exemplo:
+```css
+p {
+    color: red;
+}
+```
+
+> **ATENÇÃO!**
+> Não esqueçam de **indentar** o código! Isso ajuda na sua legibilidade, manutenção e colaboração com outros desenvolvedores.
+> Para indentar, selecione a linha do código e aperte *tab*.
+
+--------
+
+## Aula 3 - Listas e HTML semântico
+### Listas
