@@ -110,6 +110,12 @@ Para trabalharmos questões de hierarquia, vamos tentar ser mais específicas em
 > Não esqueçam de **indentar** o código! Isso ajuda na sua legibilidade, manutenção e colaboração com outros desenvolvedores.
 > Para indentar, selecione a linha do código e aperte *tab*.
 
+HTML | CSS
+------------ | -------------
+Comentário: ```<!-- seu comentário aqui -->``` | Propriedade de **cor**: color, background-color
+Tags no **head**: link | Propriedade de **fonte**: font-size, text-align
+Tags de **divisão**: br |
+
 --------
 
 ## Aula 3 - Listas, Classes, Display e HTML semântico
@@ -213,3 +219,11 @@ Tags semânticas mais usadas são: header, nav, section, article, main e footer.
 
 
 [Lista completa de tags semânticas](https://www.w3schools.com/html/html5_semantic_elements.asp)
+
+
+
+HTML | CSS
+------------ | -------------
+Tags de **divisão**: div, span | Propriedades de **layout**: width, height, margin, padding, display (inline-block), border
+Tags de **lista**: ul, ol, li | Propriedades de **lista**: list-style
+Tags **semântico**: nav, header, main, section, article, aside, footer | Propriedades de **fontes**: Font (-family,  -style, -weight), Text-decoration, Text-transform
