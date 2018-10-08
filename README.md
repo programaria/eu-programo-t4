@@ -51,6 +51,16 @@ Internamente, as tags html possuem uma anatomia básica também:
 </nome-da-tag>
 ```
 
+HTML | 
+------------ | -------------
+Tags de **estrutura**: html, head, body |
+Tags no **head**: title |
+Tags de **divisão**: div |
+Tags de **texto**: h1 ao h6, p | 
+Tag de **link**: a |
+Tag de **imagem**: img |
+
+
 --------
 
 ## Aula 2 - CSS
@@ -85,3 +95,13 @@ p {
 > **ATENÇÃO!**
 > Não esqueçam de **indentar** o código! Isso ajuda na sua legibilidade, manutenção e colaboração com outros desenvolvedores.
 > Para indentar, selecione a linha do código e aperte *tab*.
+
+
+HTML | CSS
+------------ | -------------
+Comentário: ```<!-- seu comentário aqui -->``` | Propriedade de **cor**: color, background-color
+Tags no **head**: link | Propriedade de **fonte**: font-size, text-align
+Tags de **divisão**: br |
+
+
+--------
