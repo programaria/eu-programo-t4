@@ -49,6 +49,7 @@ Internamente, as tags html possuem uma anatomia básica também:
 <nome-da-tag atributo="valor do atributo">
     conteúdo
 </nome-da-tag>
+
 ```
 
 --------
@@ -85,3 +86,5 @@ p {
 > **ATENÇÃO!**
 > Não esqueçam de **indentar** o código! Isso ajuda na sua legibilidade, manutenção e colaboração com outros desenvolvedores.
 > Para indentar, selecione a linha do código e aperte *tab*.
+=======
+```
