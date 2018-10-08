@@ -1,6 +1,32 @@
 # Conteúdo das aulas do curso Eu ProgrAmo
 
 ## Exercícios
+### Para Terça - 09/10/2018
+1. Artigo Iana - Responsivo
+2. Cardápio Cozinharia - somente HTML
+3. FlexFroggy
+
+#### Artigo Iana - Responsivo
+A partir da página desenvolvida na última semana, vamos deixá-la responsiva.
+Ela deve ficar da seguinte forma, no celular:
+![Imagem referência do exercício de responsividade, artigo da Iana](img/07_responsivo.png)
+
+
+#### Cardápio Cozinharia - somente HTML
+Continuando nosso projeto, vamos desenvolver a estrutura em HTML da página do cardápio, usando os conhecimentos de tabela.
+Referência:
+![Imagem referência doa página do cardápio, do projeto Cozinharia](img/08_cardapio-cozinharia.png)
+
+
+#### FlexFroggy
+O joguinho do sapo é ótimo para consolidar nossos conhecimentos de Flexbox e é bem divertido!
+Você pode jogar [aqui](https://flexboxfroggy.com/#pt-br).
+
+
+![Imagem referência doa página do joguinho do sapo](img/06_froggy.png)
+
+
+
 ### Para Terça - 02/10/2018
 1. Exercício de lista
 2. Exercício Bloquinhos
