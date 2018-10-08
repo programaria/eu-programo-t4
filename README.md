@@ -51,14 +51,14 @@ Internamente, as tags html possuem uma anatomia básica também:
 </nome-da-tag>
 ```
 
-HTML | 
------------- | -------------
-Tags de **estrutura**: html, head, body |
-Tags no **head**: title |
-Tags de **divisão**: div |
-Tags de **texto**: h1 ao h6, p | 
-Tag de **link**: a |
-Tag de **imagem**: img |
+| HTML | 
+| ------------ |
+| Tags de **estrutura**: html, head, body |
+| Tags no **head**: title |
+| Tags de **divisão**: div |
+| Tags de **texto**: h1 ao h6, p | 
+| Tag de **link**: a |
+| Tag de **imagem**: img |
 
 
 --------
