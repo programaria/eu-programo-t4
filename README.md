@@ -295,6 +295,12 @@ Podemos usar vários pontos de quebra, ou seja larguras determinadas para a muda
 #### Desktop-first vs. Mobile-first
 Desenvolver o site primeiro para computador ou para celular faz uma diferença para a determinação dos media queries.
 
+Antes de inserir media queries, devemos inserir uma tag que identifica e entende o uso desses recursos. Colocamos dentro da tag head do nosso HTML.
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+```
+
 Se escolher fazer desktop-first (computador primeiro), seu media query deve seguir a ordem decrescente e usar max-width.
 ```css
 @media (max-width: 1200px){
