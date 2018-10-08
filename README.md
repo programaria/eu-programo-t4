@@ -227,3 +227,134 @@ HTML | CSS
 Tags de **divisão**: div, span | Propriedades de **layout**: width, height, margin, padding, display (inline-block), border
 Tags de **lista**: ul, ol, li | Propriedades de **lista**: list-style
 Tags **semântico**: nav, header, main, section, article, aside, footer | Propriedades de **fontes**: Font (-family,  -style, -weight), Text-decoration, Text-transform
+
+
+--------
+
+## Aula 4 - Tabelas
+#### Tabelas
+Tabelas são usadas para organização de certos tipos de informação. Sua estrutura no HTML se faz através de tags como table, thead, tbody, tr, td. Saber o que cada sigla significa em português ajuda muito na hora de entender o uso de cada tag.
+- table: tabela;
+- thead: table head, ou **cabeça** de tabela;
+- tbody: table body, ou **corpo** de tabela;
+- tr: table row, ou **linha** de tabela;
+- th: table header, ou **cabeçalho** de tabela;
+- td: table data, ou **dado** de tabela.
+Sendo assim, a estrutura básica de uma tabela é:
+```html
+<table>
+    <thead>
+        <tr>
+            <th>Cabeçalho 1</th>
+            <th>Cabeçalho 2</th>
+            <th>Cabeçalho 3</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Dado de coluna 1</td>
+            <td>Dado de coluna 2</td>
+            <td>Dado de coluna 3</td>
+        </tr>
+    </tbody>
+</table>
+```
+Existe também o tfoot, que define o footer de uma tabela. Para mais informações, consulte a [documentação](https://www.w3schools.com/html/html_tables.asp).
+
+Podemos também definir quantas colunas ou linhas uma única célula (ou td/th) vai ocupar. Para isso, usamos os atributos *colspan* (para colunas) e *rowspan* (para linhas).
+
+> E CSS em tabelas?
+>
+> Para estilizar nossas tabelas, é comum usar as propriedades de border, padding, text-align. Uma propriedade nova é a [border-collapse](https://www.w3schools.com/cssref/pr_border-collapse.asp), que não deixa as bordas adjacentes "duplicarem". Outra propriedade é o [border-spacing](https://www.w3schools.com/cssref/pr_border-spacing.asp), que define espaçamento entre células (só funciona para border-collapse: separate).
+
+-- _&&&_ --
+
+#### Responsividade
+Hoje em dia, existem vários tipos de aparelhos e normalmente eles tem tamanhos de telas diferentes. O design que faz com que nossas aplicações e sites sejam usáveis em todos esses aparelhos se chama design responsivo.
+
+Isso implica normalmente em termos sites com **layouts e imagens fluidos**. Por exemplo, se no computador o seu layout tem 3 colunas, no celular ele teria 1 apenas. O tamanho das imagens também se ajusta com o diferente tamanho de tela.
+
+Para fazermos sites resposivos, vamos utilizar **media queries**. Elas separam pedaços de códigos em escopos para aparelhos com tamanhos de telas definidos por nós. Eles são inseridos no final do nosso código CSS. Exemplo:
+
+```css
+@media (min-width: 768px){
+    p {
+        color: red;
+    }
+}
+```
+Esse código quer dizer que para todo aparelho que tiver **no mínimo 768px de largura**, eu quero que os meus parágrafos sejam vermelhos.
+
+Podemos usar vários pontos de quebra, ou seja larguras determinadas para a mudança de layout. Também chamamos esses pontos de *breakpoints*. Alguns breakpoints padrão são:
+- 420px: celular
+- 768px: tablet em posição retrato
+- 1024px: tablet em posição paisagem
+- 1200px: desktops
+- 1800px+: desktops grandes e TVs
+
+#### Desktop-first vs. Mobile-first
+Desenvolver o site primeiro para computador ou para celular faz uma diferença para a determinação dos media queries.
+
+Se escolher fazer desktop-first (computador primeiro), seu media query deve seguir a ordem decrescente e usar max-width.
+```css
+@media (max-width: 1200px){
+    /* código para desktops menores que 1800px */
+}
+
+@media (max-width: 1024px){
+    /* código para tablet paisagem */
+}
+
+@media (max-width: 768px){
+    /* código para tablet retrato */
+}
+
+@media (max-width: 420px){
+    /* código para celulares */
+}
+```
+A ordem deve ser esta para que não haja conflito de estilos (o estilo do desktop sobrescrever o do celular, por exemplo).
+
+Já se você optou por começar pelo mobile-first (celular primeiro), seu media query deve seguir a ordem crescente e usar min-width.
+```css
+@media (min-width: 420px){
+    /* código para celulares maiores que 420px */
+}
+
+@media (min-width: 768px){
+    /* código para tablet retrato */
+}
+
+@media (min-width: 1024px){
+    /* código para tablet paisagem */
+}
+
+@media (min-width: 1200px){
+    /* código para desktop */
+}
+```
+
+-- _&&&_ --
+
+#### Flexbox
+O display: flex veio para nos ajudar a criarmos layouts fluidos e responsivos mais facilmente. 
+
+Quando um elemento é flex, todos os seus elementos filhos ficam em linha, ou seja, um do lado do outro.
+
+Além disso, com o display: flex, outras propriedades são habilidatas, como:
+- **flex-direction** (determina se os elementos ficam alinhados horizontal ou verticalmente);
+- **flex-wrap** (habilita e desabilita a possibilidade de os elementos irem para outra linha, caso não caibam todos dentro do container, na mesma linha);
+- **justify-content** (propriedade de alinhamento no eixo principal, ou horizontal, por padrão);
+- **align-items** (propriedade de alinhamento no eixo contrário, ou vertical, por padrão)
+
+Para se familiarizar com as propriedades e com o display: flex, confira os links abaixo:
+- [Artigo com gifs explicativos em Flex - inglês](https://medium.freecodecamp.org/an-animated-guide-to-flexbox-d280cf6afc35)
+- [Guia completo de Flexbox - inglês](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+- [FlexFroggy: jogo para aprendizagem do flex. Disponível em português.](http://flexboxfroggy.com/)
+
+
+
+HTML | CSS
+------------ | -------------
+Tags de **tabela**: table, thead, tbody, th, td, tr | Propriedades de **tabela**: border-collapse, border-spacing
+-  | Propriedades de **flexbox**: display: flex, justify-content, align-items
